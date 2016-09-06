@@ -2,10 +2,33 @@
 
 <head>
 <title> about me </title>
+
+<Script language="javascript">
+  var o_interval
+  var delay=500 // define blink delay to 1/2 second
+
+  function makeBlink() {
+    o_interval = window.setInterval("ShowHide()", delay);
+  }
+  function stopBlink() {
+    window.clearInterval(o_interval);
+  }
+
+  function ShowHide() {
+    var o_img = document.getElementById("blinkImg");
+    if (o_img.style.visibility=="hidden")
+      o_img.style.visibility="visible"
+    else
+      o_img.style.visibility="hidden"
+  }
+</Script>    
+
 </head>
 
 <body>
-
+<img id="blinkImg" src="/L235F16/images/sadoldman.jpg" style="visibility : visible">
+  <input type="button" value="make blink" onclick="makeBlink();">
+  <input type="button" value="stop blink" onclick="stopBlink();">
 </body>
 
 </html>
