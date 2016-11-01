@@ -5,7 +5,7 @@
   <head>
 <meta charset="utf-8">
     
-   <!-- You are data -->
+   <!-- You is data -->
     
 <meta content="stuff, to, help, search, engines, not" name="keywords">
     
@@ -15,7 +15,7 @@
 <meta content="You" name="Described">
 <Described> You </Described>
   
-    <!-- You have been described -->
+    <!-- You is being described -->
     
 <style>
 #container {
@@ -31,13 +31,17 @@
 }
 </style>
     
-    <!-- visual data taking up space -->
+    <!-- data occupying space -->
 
 </head>
 
 <body>
+  <!-- You has a voice -->
   
-  <!-- confined -->
+  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} hcb_user.PAGE="sebastianlowe.github.io/L235F16";(function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24GEilo9FvSQckTxVFO8kH.%2F"+"&opts=16860&num=10&ts=1477971352381");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+
+  <!-- You is collected and confined -->
   <div id="container">
     <video autoplay="true" id="videoElement">
      
@@ -45,6 +49,7 @@
 </div>
 <script>
   var video = document.querySelector("#videoElement");
+  
  
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
  
@@ -57,18 +62,28 @@ function handleVideo(stream) {
 }
  
 function videoError(e) {
-    // do something
+    // You is still lost.
 }
  
 </script>
-  
-  it worked.
-  
 
+  <!-- finding You within the data -->
   
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} hcb_user.PAGE="sebastianlowe.github.io/L235F16";(function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24GEilo9FvSQckTxVFO8kH.%2F"+"&opts=16860&num=10&ts=1477971352381");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-
+  <script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
+  
 </body>
 
   </html>
