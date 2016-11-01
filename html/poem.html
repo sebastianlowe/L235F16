@@ -1,6 +1,10 @@
 <html>
 <head>
   Hey
+</head>
+
+<body>
+  it worked.
   
   var $TABLE = $('#table');
 var $BTN = $('#export-btn');
@@ -25,13 +29,6 @@ $('.table-down').click(function () {
   var $row = $(this).parents('tr');
   $row.next().after($row.get(0));
 });
-
-
-</head>
-
-<body>
-  it worked.
-
   // A few jQuery helpers for exporting only
 jQuery.fn.pop = [].pop;
 jQuery.fn.shift = [].shift;
